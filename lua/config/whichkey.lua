@@ -36,7 +36,7 @@ local function normal_keymap()
 
   keymap_f = {
     name = "Find",
-    f = { "<cmd>lua require('utils.finder').find_files()<cr>", "Files" },
+    f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Files" },
     d = { "<cmd>lua require('utils.finder').find_dotfiles()<cr>", "Dotfiles" },
     b = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
     h = { "<cmd>lua require('telescope.builtin').help_tags()<cr>", "Help" },

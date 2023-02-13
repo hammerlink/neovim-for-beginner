@@ -1,6 +1,4 @@
-local M = {}
-
-local function configure()
+local M = {} local function configure()
   -- local dap_install = require "dap-install"
   -- dap_install.setup {
   --   installation_path = vim.fn.stdpath "data" .. "/dapinstall/",
@@ -83,10 +81,10 @@ local function configure_exts()
     dapui.open()
   end
   dap.listeners.before.event_terminated["dapui_config"] = function()
-    dapui.close()
+    -- dapui.close()
   end
   dap.listeners.before.event_exited["dapui_config"] = function()
-    dapui.close()
+    -- dapui.close()
   end
 end
 
